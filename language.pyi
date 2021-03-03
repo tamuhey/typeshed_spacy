@@ -190,7 +190,7 @@ class Language(object):
         DOCS: https://spacy.io/api/language#rename_pipe
         """
         ...
-    def remove_pipe(self, name):
+    def remove_pipe(self, name: str) -> None:
         """Remove a component from the pipeline.
 
         name (unicode): Name of the component to remove.
