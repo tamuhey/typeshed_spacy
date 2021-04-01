@@ -96,7 +96,7 @@ class Language(object):
     @property
     def matcher(self): ...
     @property
-    def pipe_names(self):
+    def pipe_names(self) -> List[str]:
         """Get names of available pipeline components.
 
         RETURNS (list): List of component name strings, in order.
